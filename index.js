@@ -1,71 +1,51 @@
-let n = 0;
-
-while (n < document.querySelectorAll(".drum").length) {
-
-    document.querySelectorAll(".drum")[n].addEventListener("click", function () {
+function mksound(keyValue) {
 
 
-        let buttonLetter = this.innerHTML;
-        makeSound(buttonLetter);
-        makeAnimation(buttonLetter);
 
-    });
+    switch (keyValue) {
+        case 'w':
+            var audio = new Audio("/sounds/tom-4.mp3");
+            audio.play();
+            break;
+        case 'a':
+            var audio = new Audio("/sounds/tom-3.mp3");
+            audio.play();
+            break;
+        case 's':
+            var audio = new Audio("/sounds/tom-2.mp3");
+            audio.play();
+            break;
+        case 'd':
+            var audio = new Audio("/sounds/tom-1.mp3");
+            audio.play();
+            break;
+        case 'j':
+            var audio = new Audio("/sounds/snare.mp3");
+            audio.play();
+            break;
+        case 'k':
+            var audio = new Audio("/sounds/kick-bass.mp3");
+            audio.play();
+            break;
+        case 'l':
+            var audio = new Audio("/sounds/crash.mp3");
+            audio.play();
+            break;
+        default:
+            var audio = new Audio("/sounds/error.mp3");
+            audio.play();
+    }
 
-    n++;
+
+
+
 }
 
-document.addEventListener("keypress", function (event) {
-    makeSound(event.key);
+document.addEventListener("keypress",function(event){
+mksound(event.key);
     makeAnimation(event.key);
 })
 
-function makeSound(key) {
-
-    switch (key) {
-        case "w":
-            let tom1 = new Audio("tom-1.mp3");
-            tom1.play();
-            break;
-
-        case "a":
-            let tom2 = new Audio("tom-2.mp3");
-            tom2.play();
-            break;
-
-        case "s":
-            let tom3 = new Audio("tom-3.mp3");
-            tom3.play();
-            break;
-
-        case "d":
-            let tom4 = new Audio("tom-4.mp3");
-            tom4.play();
-            break;
-
-           
-        case "j":
-            let crash = new Audio("crash.mp3");
-            crash.play();
-            break;
-
-        case "k":
-            let kickbass = new Audio("kick-bass.mp3");
-            kickbass.play();
-            break;
-
-            case "l":
-                let snare = new Audio("snare.mp3");
-                snare.play();
-                break;
-    
-
-        
-
-        default:
-            console.log("erro occured");
-            break;
-    }
-}
 
 function makeAnimation(keypressed){
     document.querySelector("."+keypressed).style.color="white";
