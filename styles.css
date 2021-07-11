@@ -18,32 +18,32 @@ footer {
 }
 
 .w {
-background-image: URL("/images/tom4.png");
+background-image: URL("tom4.png");
 object-fit: cover;
 }
 
 .a {
-  background-image: URL("/images/tom3.png");
+  background-image: URL("tom3.png");
 }
 
 .s {
-  background-image: URL("/images/tom2.png");
+  background-image: URL("tom2.png");
 }
 
 .d {
-  background-image: URL("/images/tom1.png");
+  background-image: URL("tom1.png");
 }
 
 .j {
-  background-image: URL("/images/snare.png");
+  background-image: URL("snare.png");
 }
 
 .k {
-  background-image: URL("/images/kick.png");
+  background-image: URL("kick.png");
 }
 
 .l {
-  background-image: URL("/images/crash.png");
+  background-image: URL("crash.png");
 }
 
 .set {
