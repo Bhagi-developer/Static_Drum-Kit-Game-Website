@@ -64,6 +64,6 @@ function makeAnimation(keypressed){
 //     },100)
 }
 
-    })
+    });
 
 
