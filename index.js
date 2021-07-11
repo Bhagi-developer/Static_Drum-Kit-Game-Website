@@ -1,6 +1,7 @@
-function mksound(keyValue) {
+$(document).ready(function(){
 
-
+    
+ function mksound(keyValue) {
 
     switch (keyValue) {
         case 'w':
@@ -40,19 +41,29 @@ function mksound(keyValue) {
 
 
 }
-
-document.addEventListener("keypress",function(event){
-mksound(event.key);
+    
+    $(document).keypress(function(event){
+    mksound(event.key);
     makeAnimation(event.key);
-})
+    })
 
+// document.addEventListener("keypress",function(event){
+// mksound(event.key);
+//     makeAnimation(event.key);
+// })
 
+    
 function makeAnimation(keypressed){
-    document.querySelector("."+keypressed).style.color="white";
+    $("."+keypressed).css("color","white");
+//     document.querySelector("."+keypressed).style.color="white";
+    
     setTimeout(function(){
-        document.querySelector("."+keypressed).style.color="rgb(196,78,130)";
+        $("."+keypressed).css("color","rgb(196,78,130)");
     },100)
+//         document.querySelector("."+keypressed).style.color="rgb(196,78,130)";
+//     },100)
 }
 
+    })
 
 
