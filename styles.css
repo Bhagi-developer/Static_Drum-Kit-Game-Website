@@ -1,8 +1,7 @@
+
 body {
   text-align: center;
-  background-color: rgb(41, 51, 89);
-  margin: 0;
-  padding: 0;
+  background-color: #283149;
 }
 
 h1 {
@@ -10,19 +9,7 @@ h1 {
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
-  margin-top: 0;
 
-}
-
-
-.contact a{
-  display: block;
-  color: #fff;
-  margin: 10px 0;
-  text-decoration: none;
-}
-a:hover{
-  text-decoration: underline;
 }
 
 footer {
@@ -31,32 +18,32 @@ footer {
 }
 
 .w {
-  background-image: url('tom1.png');
-
+background-image: URL("/images/tom4.png");
+object-fit: cover;
 }
 
 .a {
-  background-image: url('tom2.png');
+  background-image: URL("/images/tom3.png");
 }
 
 .s {
-  background-image: url('tom3.png');
+  background-image: URL("/images/tom2.png");
 }
 
 .d {
-  background-image: url('tom4.png');
+  background-image: URL("/images/tom1.png");
 }
 
 .j {
-background-image: url('crash.png');
+  background-image: URL("/images/snare.png");
 }
 
 .k {
-  background-image: url('kick.png');
+  background-image: URL("/images/kick.png");
 }
 
 .l {
-  background-image: url('snare.png');
+  background-image: URL("/images/crash.png");
 }
 
 .set {
@@ -102,3 +89,4 @@ background-image: url('crash.png');
   }
  
 }
+
