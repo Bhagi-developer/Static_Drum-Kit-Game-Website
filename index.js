@@ -1,6 +1,11 @@
 $(document).ready(function(){
 
     
+    $(".drum").click(function (event) {
+          mksound(event.target.value);
+          makeAnimation(event.target.value);
+    })
+    
  function mksound(keyValue) {
 
     switch (keyValue) {
